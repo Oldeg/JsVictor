@@ -18,4 +18,20 @@ a.addEventListener('click',(e)=>{
     e.preventDefault()
 
 })
+const xMarksTheSpot = (n) => {
+    const arr = [];
+    if(n.length === 0){
+        return []
+    } else
+        for (let i = 0; i<=n.length;i++){
+            for (let j; j<=n[i].length;j++){
+                if(n[i][j] === 'x'){
+                    arr.push(i,j)
+                }
+            }
+        }
+    if(arr.length === 0) {
+        return []
+    }
+}
 
